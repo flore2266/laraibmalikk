@@ -1,8 +1,4 @@
 export default function Index() {
-  const scrollToSection = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-rose-50">
       {/* Navigation */}
@@ -13,7 +9,6 @@ export default function Index() {
               Laraib Malik
             </div>
 
-            {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
               <a
                 href="#home"
@@ -46,10 +41,9 @@ export default function Index() {
 
       {/* Hero Section */}
       <section id="home" className="pt-24 pb-20 relative overflow-hidden">
-        {/* Background Elements */}
         <div className="absolute top-20 left-20 w-32 h-32 bg-pink-200 rounded-full blur-xl opacity-30 animate-pulse"></div>
-        <div className="absolute bottom-32 right-24 w-24 h-24 bg-rose-200 rounded-full blur-lg opacity-40 animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-pink-300 rounded-full blur-md opacity-25 animate-pulse delay-500"></div>
+        <div className="absolute bottom-32 right-24 w-24 h-24 bg-rose-200 rounded-full blur-lg opacity-40 animate-pulse"></div>
+        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-pink-300 rounded-full blur-md opacity-25 animate-pulse"></div>
 
         <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
           <div className="mb-8">
@@ -127,93 +121,33 @@ export default function Index() {
               </div>
 
               <div className="flex flex-wrap gap-2">
-                <Badge
-                  variant="secondary"
-                  className="bg-pink-100 text-pink-700"
-                >
+                <span className="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm">
                   Technical SEO
-                </Badge>
-                <Badge
-                  variant="secondary"
-                  className="bg-pink-100 text-pink-700"
-                >
+                </span>
+                <span className="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm">
                   Content Strategy
-                </Badge>
-                <Badge
-                  variant="secondary"
-                  className="bg-pink-100 text-pink-700"
-                >
+                </span>
+                <span className="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm">
                   Link Building
-                </Badge>
-                <Badge
-                  variant="secondary"
-                  className="bg-pink-100 text-pink-700"
-                >
+                </span>
+                <span className="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm">
                   Analytics
-                </Badge>
-                <Badge
-                  variant="secondary"
-                  className="bg-pink-100 text-pink-700"
-                >
+                </span>
+                <span className="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm">
                   Local SEO
-                </Badge>
-                <Badge
-                  variant="secondary"
-                  className="bg-pink-100 text-pink-700"
-                >
+                </span>
+                <span className="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm">
                   E-commerce SEO
-                </Badge>
+                </span>
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              <Card className="p-6 text-center border-pink-100">
-                <CardContent className="p-0">
-                  <Search className="w-8 h-8 text-pink-600 mx-auto mb-3" />
-                  <h4 className="font-semibold text-gray-800 mb-2">
-                    SEO Audits
-                  </h4>
-                  <p className="text-sm text-gray-600">
-                    Comprehensive technical and content audits
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="p-6 text-center border-pink-100">
-                <CardContent className="p-0">
-                  <TrendingUp className="w-8 h-8 text-rose-600 mx-auto mb-3" />
-                  <h4 className="font-semibold text-gray-800 mb-2">
-                    Growth Strategy
-                  </h4>
-                  <p className="text-sm text-gray-600">
-                    Data-driven growth and optimization plans
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="p-6 text-center border-pink-100">
-                <CardContent className="p-0">
-                  <Target className="w-8 h-8 text-pink-600 mx-auto mb-3" />
-                  <h4 className="font-semibold text-gray-800 mb-2">
-                    Keyword Research
-                  </h4>
-                  <p className="text-sm text-gray-600">
-                    Strategic keyword analysis and targeting
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="p-6 text-center border-pink-100">
-                <CardContent className="p-0">
-                  <BarChart3 className="w-8 h-8 text-rose-600 mx-auto mb-3" />
-                  <h4 className="font-semibold text-gray-800 mb-2">
-                    Performance Tracking
-                  </h4>
-                  <p className="text-sm text-gray-600">
-                    Detailed reporting and ROI analysis
-                  </p>
-                </CardContent>
-              </Card>
+            <div className="text-center">
+              <img
+                src="https://images.pexels.com/photos/8872492/pexels-photo-8872492.jpeg"
+                alt="Laraib Malik - Professional SEO Expert"
+                className="w-full max-w-sm mx-auto h-96 object-cover rounded-2xl shadow-lg"
+              />
             </div>
           </div>
         </div>
@@ -237,63 +171,63 @@ export default function Index() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="group hover:shadow-xl transition-all duration-300 border-pink-100 hover:border-pink-200">
-              <CardContent className="p-8">
-                <Globe className="w-12 h-12 text-pink-600 mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  Technical SEO
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Complete technical optimization including site speed,
-                  mobile-friendliness, crawlability, and indexability
-                  improvements.
-                </p>
-                <ul className="text-sm text-gray-600 space-y-2">
-                  <li>• Site Architecture Optimization</li>
-                  <li>• Core Web Vitals Improvement</li>
-                  <li>• Schema Markup Implementation</li>
-                  <li>• Technical Audit & Fixes</li>
-                </ul>
-              </CardContent>
-            </Card>
+            <div className="group hover:shadow-xl transition-all duration-300 border border-pink-100 hover:border-pink-200 bg-white p-8 rounded-lg">
+              <div className="w-12 h-12 bg-gradient-to-r from-pink-600 to-rose-600 rounded-full flex items-center justify-center text-white text-2xl mb-4 mx-auto">
+                🌐
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">
+                Technical SEO
+              </h3>
+              <p className="text-gray-600 mb-4 text-center">
+                Complete technical optimization including site speed,
+                mobile-friendliness, crawlability, and indexability
+                improvements.
+              </p>
+              <ul className="text-sm text-gray-600 space-y-2">
+                <li>• Site Architecture Optimization</li>
+                <li>• Core Web Vitals Improvement</li>
+                <li>• Schema Markup Implementation</li>
+                <li>• Technical Audit & Fixes</li>
+              </ul>
+            </div>
 
-            <Card className="group hover:shadow-xl transition-all duration-300 border-pink-100 hover:border-pink-200">
-              <CardContent className="p-8">
-                <Users className="w-12 h-12 text-rose-600 mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  Content Strategy
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Strategic content planning and optimization to attract,
-                  engage, and convert your target audience effectively.
-                </p>
-                <ul className="text-sm text-gray-600 space-y-2">
-                  <li>• Content Gap Analysis</li>
-                  <li>• SEO Content Creation</li>
-                  <li>• Content Optimization</li>
-                  <li>• Editorial Calendar Planning</li>
-                </ul>
-              </CardContent>
-            </Card>
+            <div className="group hover:shadow-xl transition-all duration-300 border border-pink-100 hover:border-pink-200 bg-white p-8 rounded-lg">
+              <div className="w-12 h-12 bg-gradient-to-r from-pink-600 to-rose-600 rounded-full flex items-center justify-center text-white text-2xl mb-4 mx-auto">
+                👥
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">
+                Content Strategy
+              </h3>
+              <p className="text-gray-600 mb-4 text-center">
+                Strategic content planning and optimization to attract, engage,
+                and convert your target audience effectively.
+              </p>
+              <ul className="text-sm text-gray-600 space-y-2">
+                <li>• Content Gap Analysis</li>
+                <li>• SEO Content Creation</li>
+                <li>• Content Optimization</li>
+                <li>• Editorial Calendar Planning</li>
+              </ul>
+            </div>
 
-            <Card className="group hover:shadow-xl transition-all duration-300 border-pink-100 hover:border-pink-200">
-              <CardContent className="p-8">
-                <Award className="w-12 h-12 text-pink-600 mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  Link Building
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  High-quality, white-hat link building strategies to boost
-                  domain authority and search rankings.
-                </p>
-                <ul className="text-sm text-gray-600 space-y-2">
-                  <li>• Strategic Outreach Campaigns</li>
-                  <li>• Guest Posting Opportunities</li>
-                  <li>• Digital PR & Brand Mentions</li>
-                  <li>• Competitor Backlink Analysis</li>
-                </ul>
-              </CardContent>
-            </Card>
+            <div className="group hover:shadow-xl transition-all duration-300 border border-pink-100 hover:border-pink-200 bg-white p-8 rounded-lg">
+              <div className="w-12 h-12 bg-gradient-to-r from-pink-600 to-rose-600 rounded-full flex items-center justify-center text-white text-2xl mb-4 mx-auto">
+                🏆
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">
+                Link Building
+              </h3>
+              <p className="text-gray-600 mb-4 text-center">
+                High-quality, white-hat link building strategies to boost domain
+                authority and search rankings.
+              </p>
+              <ul className="text-sm text-gray-600 space-y-2">
+                <li>• Strategic Outreach Campaigns</li>
+                <li>• Guest Posting Opportunities</li>
+                <li>• Digital PR & Brand Mentions</li>
+                <li>• Competitor Backlink Analysis</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -325,8 +259,8 @@ export default function Index() {
 
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center">
-                    <Mail className="w-6 h-6 text-pink-600" />
+                  <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center text-pink-600 text-xl">
+                    ✉️
                   </div>
                   <div>
                     <div className="font-semibold text-gray-800">Email</div>
@@ -337,8 +271,8 @@ export default function Index() {
                 </div>
 
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center">
-                    <Phone className="w-6 h-6 text-rose-600" />
+                  <div className="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center text-rose-600 text-xl">
+                    📞
                   </div>
                   <div>
                     <div className="font-semibold text-gray-800">Phone</div>
@@ -347,8 +281,8 @@ export default function Index() {
                 </div>
 
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center">
-                    <MapPin className="w-6 h-6 text-pink-600" />
+                  <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center text-pink-600 text-xl">
+                    📍
                   </div>
                   <div>
                     <div className="font-semibold text-gray-800">Location</div>
@@ -360,54 +294,49 @@ export default function Index() {
               </div>
             </div>
 
-            <Card className="border-pink-100">
-              <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-gray-800 mb-6">
-                  Quick Contact
-                </h3>
-                <form className="space-y-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      className="w-full p-3 border border-pink-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
-                      placeholder="Your name"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      className="w-full p-3 border border-pink-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
-                      placeholder="your@email.com"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Message
-                    </label>
-                    <textarea
-                      rows={4}
-                      className="w-full p-3 border border-pink-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
-                      placeholder="Tell me about your project..."
-                    ></textarea>
-                  </div>
-                  <Button
-                    onClick={() =>
-                      (window.location.href =
-                        "mailto:laraibmalik084@gmail.com?subject=Project Inquiry&body=Hi Laraib, I would like to discuss a project with you.")
-                    }
-                    className="w-full bg-gradient-to-r from-pink-600 to-rose-600 hover:from-pink-700 hover:to-rose-700 text-white"
-                  >
-                    Send Message
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
+            <div className="border border-pink-100 bg-white p-8 rounded-lg">
+              <h3 className="text-xl font-bold text-gray-800 mb-6">
+                Quick Contact
+              </h3>
+              <form className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    className="w-full p-3 border border-pink-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    className="w-full p-3 border border-pink-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                    placeholder="your@email.com"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Message
+                  </label>
+                  <textarea
+                    rows={4}
+                    className="w-full p-3 border border-pink-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                    placeholder="Tell me about your project..."
+                  ></textarea>
+                </div>
+                <a
+                  href="mailto:laraibmalik084@gmail.com?subject=Project Inquiry&body=Hi Laraib, I would like to discuss a project with you."
+                  className="w-full bg-gradient-to-r from-pink-600 to-rose-600 hover:from-pink-700 hover:to-rose-700 text-white py-3 px-4 rounded-lg font-semibold text-center inline-block transition-all duration-300"
+                >
+                  Send Message
+                </a>
+              </form>
+            </div>
           </div>
         </div>
       </section>
