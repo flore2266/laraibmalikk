@@ -132,7 +132,10 @@ export default function Index() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <Button
-              onClick={() => scrollToSection("contact")}
+              onClick={() =>
+                (window.location.href =
+                  "mailto:laraibmalik084@gmail.com?subject=Let's Work Together - SEO Project Inquiry")
+              }
               className="bg-gradient-to-r from-pink-600 to-rose-600 hover:from-pink-700 hover:to-rose-700 text-white px-8 py-3 text-lg"
             >
               Let's Work Together
@@ -395,7 +398,9 @@ export default function Index() {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-800">Email</div>
-                    <div className="text-gray-600">laraib.malik@email.com</div>
+                    <div className="text-gray-600">
+                      laraibmalik084@gmail.com
+                    </div>
                   </div>
                 </div>
 
@@ -405,7 +410,7 @@ export default function Index() {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-800">Phone</div>
-                    <div className="text-gray-600">+1 (555) 123-4567</div>
+                    <div className="text-gray-600">03141671053</div>
                   </div>
                 </div>
 
@@ -415,7 +420,9 @@ export default function Index() {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-800">Location</div>
-                    <div className="text-gray-600">Available Worldwide</div>
+                    <div className="text-gray-600">
+                      DHQ Civil line jhang sadar
+                    </div>
                   </div>
                 </div>
               </div>
@@ -457,7 +464,13 @@ export default function Index() {
                       placeholder="Tell me about your project..."
                     ></textarea>
                   </div>
-                  <Button className="w-full bg-gradient-to-r from-pink-600 to-rose-600 hover:from-pink-700 hover:to-rose-700 text-white">
+                  <Button
+                    onClick={() =>
+                      (window.location.href =
+                        "mailto:laraibmalik084@gmail.com?subject=Project Inquiry&body=Hi Laraib, I would like to discuss a project with you.")
+                    }
+                    className="w-full bg-gradient-to-r from-pink-600 to-rose-600 hover:from-pink-700 hover:to-rose-700 text-white"
+                  >
                     Send Message
                   </Button>
                 </form>
