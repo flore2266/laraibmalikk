@@ -478,7 +478,7 @@ export default function Index() {
           </p>
           <div className="h-px w-24 bg-gradient-to-r from-pink-500 to-rose-500 mx-auto mb-6"></div>
           <p className="text-gray-500">
-            © 2024 Laraib Malik. All rights reserved. | Boosting businesses
+            © 2025 Laraib Malik. All rights reserved. | Boosting businesses
             through strategic SEO.
           </p>
         </div>
