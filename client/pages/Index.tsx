@@ -15,76 +15,32 @@ export default function Index() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
-              <button
-                onClick={() => scrollToSection("home")}
+              <a
+                href="#home"
                 className="text-gray-700 hover:text-pink-600 transition-colors"
               >
                 Home
-              </button>
-              <button
-                onClick={() => scrollToSection("about")}
+              </a>
+              <a
+                href="#about"
                 className="text-gray-700 hover:text-pink-600 transition-colors"
               >
                 About
-              </button>
-              <button
-                onClick={() => scrollToSection("services")}
+              </a>
+              <a
+                href="#services"
                 className="text-gray-700 hover:text-pink-600 transition-colors"
               >
                 Services
-              </button>
-              <button
-                onClick={() => scrollToSection("contact")}
+              </a>
+              <a
+                href="#contact"
                 className="text-gray-700 hover:text-pink-600 transition-colors"
               >
                 Contact
-              </button>
+              </a>
             </div>
-
-            {/* Mobile Menu Button */}
-            <button
-              className="md:hidden"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              <div className="w-6 h-6 flex flex-col justify-center space-y-1">
-                <div className="w-full h-0.5 bg-pink-600"></div>
-                <div className="w-full h-0.5 bg-pink-600"></div>
-                <div className="w-full h-0.5 bg-pink-600"></div>
-              </div>
-            </button>
           </div>
-
-          {/* Mobile Navigation */}
-          {isMenuOpen && (
-            <div className="md:hidden mt-4 pb-4 border-t border-pink-100">
-              <div className="flex flex-col space-y-3 pt-4">
-                <button
-                  onClick={() => scrollToSection("home")}
-                  className="text-left text-gray-700 hover:text-pink-600 transition-colors"
-                >
-                  Home
-                </button>
-                <button
-                  onClick={() => scrollToSection("about")}
-                  className="text-left text-gray-700 hover:text-pink-600 transition-colors"
-                >
-                  About
-                </button>
-                <button
-                  onClick={() => scrollToSection("services")}
-                  className="text-left text-gray-700 hover:text-pink-600 transition-colors"
-                >
-                  Services
-                </button>
-                <button
-                  onClick={() => scrollToSection("contact")}
-                  className="text-left text-gray-700 hover:text-pink-600 transition-colors"
-                >
-                  Contact
-                </button>
-              </div>
-            </div>
-          )}
         </div>
       </nav>
 
