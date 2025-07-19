@@ -67,22 +67,18 @@ export default function Index() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-            <Button
-              onClick={() =>
-                (window.location.href =
-                  "mailto:laraibmalik084@gmail.com?subject=Let's Work Together - SEO Project Inquiry")
-              }
-              className="bg-gradient-to-r from-pink-600 to-rose-600 hover:from-pink-700 hover:to-rose-700 text-white px-8 py-3 text-lg"
+            <a
+              href="mailto:laraibmalik084@gmail.com?subject=Let's Work Together - SEO Project Inquiry"
+              className="bg-gradient-to-r from-pink-600 to-rose-600 hover:from-pink-700 hover:to-rose-700 text-white px-8 py-3 text-lg rounded-lg font-semibold text-center inline-block transition-all duration-300"
             >
               Let's Work Together
-            </Button>
-            <Button
-              variant="outline"
-              onClick={() => scrollToSection("services")}
-              className="border-pink-300 text-pink-700 hover:bg-pink-50 px-8 py-3 text-lg"
+            </a>
+            <a
+              href="#services"
+              className="border-2 border-pink-300 text-pink-700 hover:bg-pink-50 px-8 py-3 text-lg rounded-lg font-semibold text-center inline-block transition-all duration-300"
             >
               View Services
-            </Button>
+            </a>
           </div>
         </div>
       </section>
