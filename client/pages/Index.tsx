@@ -1,26 +1,6 @@
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import {
-  Mail,
-  Phone,
-  MapPin,
-  Search,
-  TrendingUp,
-  Target,
-  BarChart3,
-  Globe,
-  Users,
-  Award,
-} from "lucide-react";
-
 export default function Index() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
-    setIsMenuOpen(false);
   };
 
   return (
